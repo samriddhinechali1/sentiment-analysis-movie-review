@@ -24,6 +24,10 @@ def generate_wordcloud(text):
 # Get all the models and vectorizer
 
 vectorizer = TfidfVectorizer(use_idf=True, ngram_range=(1,3))
+X_train = joblib.load('analysis/X_train.pkl')
+X_test = joblib.load('analysis/X_test.pkl')
+X_train_tv = vectorizer.fit_transform(X_train)
+X_test_tv = vectorizer.transform(X_test)
 
 # with open('models/logistic_regressor.pkl', 'rb') as f:
 #     lr_model = pickle.load(f)
