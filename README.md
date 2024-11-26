@@ -25,7 +25,7 @@ But **beware**... with great power comes great responsibility (and some slow loa
 ## 🌟 How to Run the App Locally
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/movie-review-sentiment-analysis.git
+   git clone https://github.com/samriddhinechali1/movie-review-sentiment-analysis.git
    ```
 2. Run the app:
    ```bash
